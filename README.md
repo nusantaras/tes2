@@ -16,8 +16,11 @@ git clone user.name@host:/path/to/remote/repository
 ## Membuat Repo lokal
 
 git add <file_name>
+
 git commit –m “Tambahkan catatan untuk commit Anda”
+
 git remote add origin <server>
+  
 git push origin master
 
 ## BRANC
