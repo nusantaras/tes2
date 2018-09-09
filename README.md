@@ -2,26 +2,23 @@
 # PERINTAH GIT
 
 ## Konfigurasi Awal
-'''
+
 git config --global user.name "nama_user"
 git config --global user.email contoh@petanikode.com
 git config --list
-'''
+
 
 ## Mengambil Repo Lokal
-'''
+
 git clone /path/to/local/repository
 git clone user.name@host:/path/to/remote/repository
-'''
 
 ## Membuat Repo lokal
 
-'''
 git add <file_name>
-git commit ñm ìTambahkan catatan untuk commit Andaî
+git commit ‚Äìm ‚ÄúTambahkan catatan untuk commit Anda‚Äù
 git remote add origin <server>
 git push origin master
-'''
 
 ## BRANC
 
