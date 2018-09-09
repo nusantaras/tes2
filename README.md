@@ -4,13 +4,16 @@
 ## Konfigurasi Awal
 
 git config --global user.name "nama_user"
+
 git config --global user.email contoh@petanikode.com
+
 git config --list
 
 
 ## Mengambil Repo Lokal
 
 git clone /path/to/local/repository
+
 git clone user.name@host:/path/to/remote/repository
 
 ## Membuat Repo lokal
