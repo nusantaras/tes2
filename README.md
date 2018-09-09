@@ -46,5 +46,9 @@ git tag 1.1.0 1c2d2d56fa
 git add index.html about.html contect.html
 git commit -m "Commit pertama"
 
+# Remote
+
+git remote -v 
+
 
 
