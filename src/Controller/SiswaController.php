@@ -32,21 +32,22 @@ class SiswaController extends AbstractController
 	/**
 	 * @Route("/siswa/{id}", name="product_show")
 	 */
-	public function show($id)
+	public function show(BioSiswa $siswa)
 	{
-		$siswa = $this->getDoctrine()
-			->getRepository(BioSiswa::class)
-			->find($id);
+	//	$siswa = $this->getDoctrine()
+	//		->getRepository(BioSiswa::class)
+	//		->find($id);
 
 		if (!$siswa) {
 			throw $this->createNotFoundException(
 				'No product found for id '.$id
 			);
+
 		}
 
 		return new Response('Check out this great siswa: '.$siswa->getNama());
-
-		// or render a template
+		//return new Response('Check out this great siswa: '.$siswa->findAll());
+			// or render a template
 		// in the template, print things with {{ product.name }}
 		// return $this->render('product/show.html.twig', ['product' => $product]);
 	}

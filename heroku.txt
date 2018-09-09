@@ -1,0 +1,56 @@
+
+1. Buka situs heroku di browser
+
+2. Buat akun gratis
+
+3. Install aplikasi pendukung di komputer lokal
+	download heroku cmd install
+   	download git install
+
+5. buka cmd
+	tes heroku -v
+	tes git --version
+
+6. buat folder
+	#mkdir app
+
+	pindah direktori
+	#cd app
+
+	Buat file index.php
+	isinya <?php echo " hello "; >
+
+	Buat file composer.json
+	isinya { }
+
+7. Buat git
+	#git init
+	#git add .
+	#git status
+	#git commit -m "tes app"
+
+8. Buat aplikasi di server heroku
+	#heroku create
+	maka akan menghasilkan https://lit-shore-95395.herokuapp.com/ | https://git.heroku.com/lit-shore-95395.git
+	Pindahkan file dari komputer lokal ke server.
+		buildpack php
+		#heroku create --buildpack https://github.com/heroku/heroku-buildpack-php.git
+	#git push heroku master
+	jika terjadi error
+	#heroku git:remote -a lit-shore-95395
+
+9. Buka aplikasi di browser
+	#heroku open
+
+php
+heroku buildpacks:clear
+heroku create myapp --buildpack heroku/php
+
+postgre
+#heroku addons:create heroku-postgresql:hobby-dev
+heroku addons:create heroku-postgresql:hobby-dev
+
+heroku pg:info
+
+
+
